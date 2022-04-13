@@ -20,13 +20,7 @@
 	opacity: 0.6;
 }
 
-/* @media (max-width: 1169.75px) {}
-@media (max-width: 1023.75px) {} */
-
-/*  С 320 и до 767 */
-/* @media (max-width: 767.75px) {} */
-
-/* Header */
+/* Header -------------------- */
 .header {
 	position: absolute;
 	z-index: 10;
@@ -48,6 +42,9 @@
 	opacity: 0.7;
 	text-decoration: none;
 	padding-left: 40px;
+}
+.logo {
+	max-width: 140px;
 }
 .nav__link:first-child {
 	padding-left: 0;
@@ -73,24 +70,8 @@
 	background: #155381;
 	transition: 0.7s;
 }
-.btn {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 160%;
-	color: #FFFFFF;
-	background: #1B75BB;
-	border-radius: 5px;
-	border: none;
-	padding: 15px 30px;
-}
-.btn:hover {
-	background: #155381;
-	transition: 0.7s;
-}
-/* Header */
-/* INTRO */
+
+/* INTRO -------------------- */
 .intro {
 	background: url(./img/introbg.jpg) no-repeat center;
 	background-size: 100%;
@@ -130,11 +111,28 @@
 	padding-bottom: 30px;
 	max-width: 347px;
 }
+.btn {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 160%;
+	color: #FFFFFF;
+	background: #1B75BB;
+	border-radius: 5px;
+	border: none;
+	padding: 15px 30px;
+}
+.btn:hover {
+	background: #155381;
+	transition: 0.7s;
+}
 .intro__btn {
 	margin-bottom: 94px;
 }
 .intro_box {
 	display: flex;
+	align-items: center;
 	border-radius: 10px;
 	position: absolute;
 	left: -30px;
@@ -181,8 +179,8 @@
 	opacity: 0.8;
 	
 }
-/* INTRO */
-/* HOLIDAY */
+
+/* HOLIDAY -------------------- */
 .holiday {
 	display: flex;
 	justify-content: center;
@@ -225,9 +223,9 @@
 .holiday--title {
 	padding-bottom: 31px;
 }
-/* HOLIDAY*/
 
-/* ABOUT */
+
+/* ABOUT -------------------- */
 .about {
 	padding-bottom: 140px;
 }
@@ -281,9 +279,9 @@
 	opacity: 0.6;
 	padding-bottom: 15px;
 }
-/* ABOUT */
 
-/* GALLERY */
+
+/* GALLERY -------------------- */
 .gallery {
 	display: flex;
 	justify-content: space-between;
@@ -350,8 +348,9 @@
 	padding: 10px 20px;
 	border: 0;
 }
-/* GALLERY */
-/* TESTIMONIALS */
+
+
+/* TESTIMONIALS -------------------- */
 .testimonials {
 	padding-bottom: 140px;
 }
@@ -372,7 +371,7 @@
 	box-shadow: 0px 4px 30px rgba(199, 199, 199, 0.25);
 	border-radius: 10px;
 	opacity: 0.7;
-	width: calc(33% - 15px);
+	width: calc((100% - 60px)/3);
 }
 .testimonials__item:hover {
 	opacity: 1;
@@ -387,7 +386,7 @@
 .testimonials__text {
 	position: relative;
 	text-align: center;
-	width: 281px;
+	max-width: 281px;
 	margin: 0 auto;
 	padding-bottom: 29px;
 }
@@ -416,11 +415,21 @@
 	padding-bottom: 5px;
 }
 .testimonials__link {
-	display: block;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 160%;
 	text-align: center;
+	color: #081F32;
+	opacity: 0.7;
+	text-decoration: none;
+	display: block;
 	padding-bottom: 28px;
 }
-/* TESTIMONIALS */
+
+
+/* SUBSCRIBE -------------------- */
 .subscribe {
 	padding-bottom: 124px;
 }
@@ -438,14 +447,8 @@
 	padding-bottom: 20px;
 }
 .subscribe__title {
-	font-family: 'Gelasio';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 140%;
-	text-align: center;
-	color: #081F32;
 	padding-bottom: 50px;
+	text-align: center;
 }
 .subscribe__box {
 	max-width: 569px;
@@ -482,7 +485,7 @@
 	background: #155381;
 	transition: 0.7s;
 }
-/* FOOTER */
+/* FOOTER -------------------- */
 .footer {
 	background: #FCFCFD;
 	padding-bottom: 145px;
@@ -504,7 +507,7 @@
 	line-height: 150%;
 	color: #081F32;
 	opacity: 0.7;
-	width: 257px;
+	max-width: 257px;
 	padding-bottom: 30px;
 }
 .footer__email {
@@ -550,10 +553,296 @@
 	text-decoration: none;
 	padding-bottom: 20px;
 }
-/* FOOTER */
-
+.footer__sbcr {
+	padding: 15px 30px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	width: 100%;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #081F32;
+	opacity: 0.5;
+}
+.footer__btn {
+	background: #1B75BB;
+	border-radius: 5px;
+	border: none;
+	padding: 15px 40px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+}
+.footer__btn:hover {
+	background: #155381;
+	transition: 0.7s;
+}
 /* @media (max-width: 1169.75px) {}
 @media (max-width: 1023.75px) {} */
 
 /*  С 320 и до 767 */
 /* @media (max-width: 767.75px) {} */
+
+
+@media (max-width: 1023.75px) {
+
+.container {
+	max-width: 1024px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #081F32;
+	opacity: 0.6;
+}
+	/* Header -------------------- */
+.heaeder_inner {
+	padding-top: 20px;
+}
+.nav__link {
+	font-size: 16px;
+	padding-left: 20px;
+}
+.btn--book {
+	font-size: 14px;
+	padding: 10px 20px;
+}
+/* INTRO -------------------- */
+.intro__wrapper {
+		padding-top: 167px;
+}
+.subtitle {
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+.intro__title {
+	font-size: 36px;
+	padding-bottom: 20px;
+}
+.intro__text {
+	padding-bottom: 25px;
+}
+.btn {
+	padding: 10px 20px;
+	font-size: 14px;
+}
+.intro_box {
+	display: flex;
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: -40px;
+	backdrop-filter: blur(70px);
+	
+}
+.box__inner {
+	padding: 15px 0 15px 25px ;
+	position: relative;
+}
+.box__inner:last-child {
+	padding-right: 25px;
+}
+.box__inner::before {
+	content: '';
+	opacity: 0.4;
+	border: 1px solid #9DACB8;
+	transform: rotate(90deg);
+	position: absolute;
+	width: 34px;
+	top: 36px;
+	right: -25px;
+	border-radius: 5px;
+}
+.box__info {
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+.box__date {
+	font-size: 14px;
+}
+
+/* HOLIDAY -------------------- */
+.holiday {
+	padding-top: 120px;
+	gap: 50px;
+}
+.holiday__image {
+	margin-bottom: 70px;
+}
+.holiday__main__img {
+	max-width: 420px;
+}
+.holiday__back__img {
+	max-width: 420px;
+	top: -27px;
+	right: -27px;
+	
+	
+}
+.holiday__sprite__img {
+	max-width: 150px;
+	position: absolute;
+	left: -20px;
+	bottom: -20px;
+	z-index: -1;
+}
+.holiday__content {
+ 	padding-top: 10px;
+}
+.title {
+	font-size: 24px;
+}
+.holiday--title {
+	padding-bottom: 15px;
+}
+/* ABOUT -------------------- */
+.about {
+	padding-bottom: 70px;
+}
+.about__title {
+	padding-bottom: 15px;
+}
+.about_text {
+	padding-bottom: 30px;
+}
+.about__subtitle {
+	font-size: 18px;
+}
+.about__info {
+	font-size: 14px;
+}
+
+/* GALLERY -------------------- */
+.gallery {
+	gap: 20px;
+	padding-bottom: 70px;
+}
+.gallery__title {
+	padding: 15px 0 10px;
+}
+.gallery__text {
+	padding-bottom: 10px;
+}
+.gallery__box {
+	max-width: calc(50% - 13px);
+	border-radius: 10px;
+	position: relative;
+}
+.gallery__item {
+	padding: 10px 10px;
+	max-width: 160px;
+}
+.gallery__info {
+	font-size: 14px;
+	padding-bottom: 7px;
+}
+.gallery__price {
+	font-size: 12px;
+}
+.gallery__btn {
+	padding: 10px 10px;
+
+}
+
+/* TESTIMONIALS -------------------- */
+.testimonials {
+	padding-bottom: 70px;
+}
+.testimonials__info {
+	padding-bottom: 30px;
+}
+.testimonials__img {
+	margin: 20px auto 20px;
+}
+.testimonials__text {
+	padding-bottom: 20px;
+}
+.testimonials__text::before {
+	width: 18px;
+	height: 15px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: -20px;
+	left: 15px; 
+}	
+.testimonials__name {
+	font-size: 18px;
+}
+.testimonials__link {
+	padding-bottom: 15px;
+}
+
+/* SUBSCRIBE -------------------- */
+.subscribe {
+	padding-bottom: 70px;
+}
+.subscribe__subtitle {
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+.subscribe__title {
+	padding-bottom: 30px;
+}
+.subscribe__box {
+	max-width: 569px;
+	display: flex;
+	margin: 0 auto;
+}
+.subscribe__email {
+	padding: 10px 20px;
+	font-size: 14px;
+	
+}
+.subscribe__btn {
+	padding: 10px 27px;
+	font-size: 14px;
+}
+/* FOOTER -------------------- */
+.footer {
+	padding: 35px 0;
+}
+.footer__inner {
+	gap: 10px; 
+}
+.footer__text {
+	font-size: 14px;
+	opacity: 0.7;
+	padding-bottom: 10px;
+}
+.footer__email {
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+.social__link {
+	padding-right: 15px;
+ 	
+}
+.footer__title {
+	font-size: 16px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.footer__link {
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+.footer__sbcr {
+	padding: 5px;
+	width: 100%;
+	font-size: 14px;
+}
+.footer__btn {
+	padding: 5px 10px;
+	font-size: 14px;
+}
