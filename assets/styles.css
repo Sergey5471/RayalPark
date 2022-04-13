@@ -920,10 +920,10 @@
 .intro_box {
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
 	left: 0;
 	bottom: -25px;
 	gap: 0 5px;
+	-webkit-backdrop-filter: blur(70px);
 
 }
 .box__inner {
