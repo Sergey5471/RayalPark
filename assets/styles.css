@@ -1034,6 +1034,7 @@
 .gallery__item {
 	padding: 10px 10px;
 	width: 231px;
+	-webkit-backdrop-filter: blur(10px);
 }
 .gallery__info {
 	font-size: 14px;
